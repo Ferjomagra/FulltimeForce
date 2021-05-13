@@ -1,0 +1,17 @@
+extends ../templates/main
+
+block content
+
+  section.main_commits
+    h1 Show commits
+
+    for Commit in commitList
+      p= Commit.name
+
+      a(href= Commit.html_url, target="_blank")= Commit.html_url
+      
+      p= Commit.id_repo
+
+
+    form(action="/save/commits", method="POST")
+      button(type='submit', name='submit') Actualizar
