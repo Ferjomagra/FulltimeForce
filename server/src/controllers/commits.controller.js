@@ -90,6 +90,7 @@ commits_controller.saveCommits = (req,res)=>{
 			tdata: JSON.stringify(data),
 			name: JSON.stringify(data.name),
 			id_repo: JSON.stringify(data.id),
+			created_at: JSON.stringify(data.created_at),
 			html_url: 'https://github.com/Ferjomagra/FulltimeForce',
 			api_url: 'https://api.github.com/repos/ferjomagra/FulltimeForce',
 			date: gDate,

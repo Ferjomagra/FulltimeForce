@@ -3,15 +3,28 @@ extends ../templates/main
 block content
 
   section.main_commits
-    h1 Show commits
+    div.header
+      h1 Click on "Update" to refresh the commits
 
-    for Commit in commitList
-      p= Commit.name
 
-      a(href= Commit.html_url, target="_blank")= Commit.html_url
+    div.middle_box
+      div.first_box
+        form(action="/save/commits", method="POST", class="login")
+
+          button(type='submit', name='submit', class="btn") Update
       
-      p= Commit.id_repo
+      div.second_box
+        for Commit in commitList
+          div.box_data
+            div.main_title
+              a(href=Commit.html_url)
+                p= 'Repository name: '+Commit.name
+              p.txt= 'Repository id: ' + Commit.id_repo
+            div.sec_data
+              if Commit.current_date != undefined
+                p.txt= 'Created at: '+ Commit.current_date
 
-
-    form(action="/save/commits", method="POST")
-      button(type='submit', name='submit') Actualizar
+              if Commit.created_at != undefinded
+                p.txt= 'Created at: '+ Commit.created_at
+              a(href= Commit.api_url, target="_blank")
+                button() More details

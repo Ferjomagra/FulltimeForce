@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+  margin:0 0 0px;
+  padding: 0 0 0px;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+/*I presentation*/
+section.main_presentation{
+  padding: 15%;
+}
+section.main_presentation div.wtext{
+  margin:0 auto;
+  width: 100%;
+  text-align: center;
+}
+section.main_presentation div.wtext h1{
+  font-size: 45px;
+  color: #003d99;
+  font-weight: bold;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 50px;
+}
+section.main_presentation div.wtext a button.btngo{
+  padding: 15px;
+  width: 200px;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  top: 50%;
+  margin-top: -22px;
+  
+  /* Tekst */
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 -1px -1px #003d99;
+  
+  /* Wygląd */
+  background-color: #0047b3;
+  box-shadow: 0 4px 0 #003d99, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+  
+  /* Przejście */
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+
+  outline: none;
+
+}
+section.main_presentation div.wtext a button.btngo:hover {
+  text-shadow: 0 -1px -1px #003d99;
+  background-color: #003d99;
+  box-shadow: 0 4px 0 #003d99, 0 5px 5px 1px rgba(0, 0, 0, 0.4);
+}
+section.main_presentation div.wtext a button.btngo:active {
+  margin-top: -18px;
+  box-shadow: none;
+}
+section.main_presentation div.wtext p.bottom_text{
+  margin-top: 15%;
+  color: #003d99;
+  font-size: 14px;
+}
+/*F presentation*/
+
+
+/*I commits view*/
+section.main_commits{
+  padding: 10px;
+}
+section.main_commits div.header{
+  height: 200px;
+  text-align: center;
+}
+section.main_commits div.header h1{
+  padding-top: 70px;
+  color: #0052cc;
+  font-weight: bold;
+}
+section.main_commits div.middle_box{
+  width: 100%;
+  max-width: 800px;
+  margin:0 auto;
+  height: 100%;
+  text-align: left;
+}
+
+section.main_commits div.middle_box div.first_box{
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+section.main_commits div.middle_box div.first_box form button{
+  padding: 12px;
+  width: 150px;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  top: 50%;
+  margin-top: -22px;
+  
+  /* Tekst */
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 -1px -1px #003d99;
+  
+  /* Wygląd */
+  background-color: #0047b3;
+  
+  /* Przejście */
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+
+  outline: none;
+}
+section.main_commits div.middle_box div.second_box div.box_data{
+  box-shadow: inset 0 0 0 1px rgba(36,28,21,0.15);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+section.main_commits div.middle_box div.second_box div.box_data p{
+  margin:0 0 0px;
+  padding:0 0 0px;
+  font-size: 15px;
+}
+section.main_commits div.middle_box div.second_box div.box_data p.txt{
+  color:#737373;
+  font-weight: bold;
+
+}
+section.main_commits div.middle_box div.second_box div.box_data div.main_title{
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 5px;
+}
+section.main_commits div.middle_box div.second_box div.box_data div.main_title a p{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+section.main_commits div.middle_box div.second_box div.box_data div.sec_data{
+  padding-top: 5px;
+}
+section.main_commits div.middle_box div.second_box div.box_data div.sec_data a button{
+  width: 100%;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: #00cc88;
+  color:white;
+  border: 0px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 5px;
+}
+/*F commits view*/
+
+
+
+/*I RESPONSIVE VIEW*/
+@media (max-width: 991px){
+  header{
+  
+  }
+
+  /*INICIO VISTA PRINCIPAL*/
+  section.main_commits div.middle_box{
+    width: 100%;
+    max-width: 100%;
+    margin:0 auto;
+    height: 100%;
+    text-align: left;
+    margin-top: 0px;
+  }
+
+  /*I FIRST BOX*/
+  section.main_commits div.header{
+    height: auto;
+    margin-bottom: 30px;
+  }
+  section.main_commits div.header h1{
+    margin:0 auto;
+    width: 100%;
+    max-width: 350px;
+    font-size: 35px;
+  }
+  section.main_commits div.middle_box div.first_box{
+    margin-bottom: 30px;
+  }
+  section.main_commits div.middle_box div.first_box form button{
+
+  }
+
+  /*F FIRST BOX*/
+
+  section.main_commits div.middle_box div.second_box div.box_data{
+    
+  }
+}
+/*F RESPONSIVE VIEW*/
