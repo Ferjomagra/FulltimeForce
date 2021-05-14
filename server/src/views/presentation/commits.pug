@@ -22,9 +22,10 @@ block content
               p.txt= 'Repository id: ' + Commit.id_repo
             div.sec_data
               if Commit.current_date != undefined
-                p.txt= 'Created at: '+ Commit.current_date
+                p.txt= 'Current date: '+ Commit.current_date
 
-              if Commit.created_at != undefinded
+              if Commit.created_at != undefined
                 p.txt= 'Created at: '+ Commit.created_at
+
               a(href= Commit.api_url, target="_blank")
                 button() More details

@@ -8,7 +8,8 @@ const commitSchema = new Schema({
 	html_url: {type:String, required: true},
 	api_url: {type: String, required: true},
 	created_at: {type: String, required: true},
-	date: {type: String, required: true}
+	date: {type: String, required: true},
+	current_date: {type: String, required: true}
 
 })
 
