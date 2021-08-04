@@ -1,4 +1,4 @@
-# FulltimeForce
+# GitHub Commits API
 Prueba técnica
 
 Hello, in this file I would like to introduce you to my system which shows my git commit history using the GitHub API. This project has been made, by the backend side,
